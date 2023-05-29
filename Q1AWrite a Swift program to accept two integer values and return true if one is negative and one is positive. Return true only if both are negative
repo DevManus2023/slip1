@@ -1,0 +1,23 @@
+func test_num(x: Int, y: Int) -> Bool {
+    if x > 0 && y < 0 
+    {
+        return true
+    }
+    else if x < 0 && y > 0 
+    {
+        return true
+    } 
+    else if x < 0 && y < 0 
+    {
+        return true
+    } 
+    else
+    {
+        return false
+    }
+}
+
+print(test_num(x:12, y:-5))
+print(test_num(x:-12, y:5))
+print(test_num(x:-12, y:-5))
+print(test_num(x:12, y:5))
